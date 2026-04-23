@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ae78c5e8d074b728e5da1333edc71c, type: 3}
+  m_Name: Mountains
+  m_EditorClassIdentifier: Assembly-CSharp::BiomeData
+  biomeName: "\u0413\u043E\u0440\u044B"
+  minimapColor: {r: 0.42, g: 0.42, b: 0.44, a: 1}
+  terrainTint: {r: 0.48, g: 0.48, b: 0.5, a: 1}
+  groundTexture: {fileID: 2800000, guid: 6b4419e988f34d289169d75c96c8ff4d, type: 3}
+  groundTextureWorldSize: 20
+  selectionPriority: 25
+  condition:
+    rid: 5434663493935300916
+  legacyMinHeight: 0
+  legacyMaxHeight: 1
+  legacyMinTemperature: 0
+  legacyMaxTemperature: 1
+  props:
+  - prefab: {fileID: 1198013417640408, guid: ac1cc01cb5dbf5d4f869c403b38f8a21, type: 3}
+    weight: 0.5
+    spawnChance: 1
+    minDistance: 7
+    maxSlopeAngle: 50
+    scaleMin: {x: 0.7, y: 0.7, z: 0.7}
+    scaleMax: {x: 1.9, y: 1.9, z: 1.9}
+  - prefab: {fileID: 1451074748068950, guid: 29636f40562819649b730c52f1babbcb, type: 3}
+    weight: 0.3
+    spawnChance: 1
+    minDistance: 4
+    maxSlopeAngle: 45
+    scaleMin: {x: 0.55, y: 0.55, z: 0.55}
+    scaleMax: {x: 1.4, y: 1.4, z: 1.4}
+  - prefab: {fileID: 1210459693873458, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
+    weight: 0.2
+    spawnChance: 0.55
+    minDistance: 9
+    maxSlopeAngle: 28
+    scaleMin: {x: 0.8, y: 0.8, z: 0.8}
+    scaleMax: {x: 1.35, y: 1.35, z: 1.35}
+  propDensity: 0.01
+  references:
+    version: 2
+    RefIds:
+    - rid: 5434663493935300916
+      type: {class: AndCondition, ns: , asm: Assembly-CSharp}
+      data:
+        children:
+        - rid: 5434663493935300917
+        - rid: 5434663493935300918
+    - rid: 5434663493935300917
+      type: {class: HeightRangeCondition, ns: , asm: Assembly-CSharp}
+      data:
+        min: 115
+        max: 245
+    - rid: 5434663493935300918
+      type: {class: TemperatureRangeCondition, ns: , asm: Assembly-CSharp}
+      data:
+        min: 0.18
+        max: 0.7

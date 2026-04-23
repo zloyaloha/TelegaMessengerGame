@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ae78c5e8d074b728e5da1333edc71c, type: 3}
+  m_Name: SnowForest
+  m_EditorClassIdentifier: Assembly-CSharp::BiomeData
+  biomeName: "\u0421\u043D\u0435\u0436\u043D\u044B\u0439 \u043B\u0435\u0441"
+  minimapColor: {r: 0.62, g: 0.78, b: 0.86, a: 1}
+  terrainTint: {r: 0.66, g: 0.82, b: 0.91, a: 1}
+  groundTexture: {fileID: 2800000, guid: 6b4419e988f34d289169d75c96c8ff4d, type: 3}
+  groundTextureWorldSize: 24
+  selectionPriority: 20
+  condition:
+    rid: 5434663493935300910
+  legacyMinHeight: 0
+  legacyMaxHeight: 1
+  legacyMinTemperature: 0
+  legacyMaxTemperature: 1
+  props:
+  - prefab: {fileID: 1918419700197574, guid: d23427eb0e5fcf9469c73a7e55668ade, type: 3}
+    weight: 0.7
+    spawnChance: 0.03
+    minDistance: 8
+    maxSlopeAngle: 30
+    scaleMin: {x: 400, y: 400, z: 400}
+    scaleMax: {x: 500, y: 500, z: 500}
+  - prefab: {fileID: 1487683352328500, guid: c288b9e9dd9d8164cbd0b8c3aecb02e9, type: 3}
+    weight: 0.3
+    spawnChance: 0.0001
+    minDistance: 4
+    maxSlopeAngle: 52.6
+    scaleMin: {x: 400, y: 400, z: 400}
+    scaleMax: {x: 500, y: 500, z: 500}
+  - prefab: {fileID: 1071701441150498, guid: 5b08ca81f48f2bb4fa4e61e9b8b5eb19, type: 3}
+    weight: 0.3
+    spawnChance: 0.005
+    minDistance: 4
+    maxSlopeAngle: 34
+    scaleMin: {x: 400, y: 400, z: 400}
+    scaleMax: {x: 500, y: 500, z: 500}
+  - prefab: {fileID: 1990558428345074, guid: c78c919bddc999441b9240e095cd3b3b, type: 3}
+    weight: 0.3
+    spawnChance: 0.005
+    minDistance: 5
+    maxSlopeAngle: 34
+    scaleMin: {x: 400, y: 400, z: 400}
+    scaleMax: {x: 500, y: 500, z: 500}
+  - prefab: {fileID: 1918419700197574, guid: d23427eb0e5fcf9469c73a7e55668ade, type: 3}
+    weight: 0.3
+    spawnChance: 0.005
+    minDistance: 4
+    maxSlopeAngle: 34
+    scaleMin: {x: 400, y: 400, z: 400}
+    scaleMax: {x: 500, y: 500, z: 500}
+  - prefab: {fileID: 1438662914950872, guid: 1f94a2951b723d24db1222bcd75446dd, type: 3}
+    weight: 0.3
+    spawnChance: 0.005
+    minDistance: 4
+    maxSlopeAngle: 34
+    scaleMin: {x: 400, y: 400, z: 400}
+    scaleMax: {x: 500, y: 500, z: 500}
+  - prefab: {fileID: 1438662914950872, guid: 1f94a2951b723d24db1222bcd75446dd, type: 3}
+    weight: 0.3
+    spawnChance: 0.005
+    minDistance: 4
+    maxSlopeAngle: 34
+    scaleMin: {x: 400, y: 400, z: 400}
+    scaleMax: {x: 500, y: 500, z: 500}
+  - prefab: {fileID: 1499859687575192, guid: a332ef284c637b94c8be3d8d59c66486, type: 3}
+    weight: 0.3
+    spawnChance: 0.005
+    minDistance: 4
+    maxSlopeAngle: 34
+    scaleMin: {x: 400, y: 400, z: 400}
+    scaleMax: {x: 500, y: 500, z: 500}
+  - prefab: {fileID: 1317041649968840, guid: 1161c4f17e125aa4098c1ff0d896c587, type: 3}
+    weight: 0.3
+    spawnChance: 0.01
+    minDistance: 3
+    maxSlopeAngle: 34
+    scaleMin: {x: 400, y: 400, z: 400}
+    scaleMax: {x: 500, y: 500, z: 500}
+  - prefab: {fileID: 1114798733411220, guid: 173572c87831f8c4e99548b474d3211c, type: 3}
+    weight: 0.3
+    spawnChance: 0.01
+    minDistance: 3
+    maxSlopeAngle: 34
+    scaleMin: {x: 400, y: 400, z: 400}
+    scaleMax: {x: 500, y: 500, z: 500}
+  - prefab: {fileID: 1301619487167056, guid: bba7fb7fa4870b649bc67d73608ea962, type: 3}
+    weight: 0.3
+    spawnChance: 0.01
+    minDistance: 3
+    maxSlopeAngle: 34
+    scaleMin: {x: 400, y: 400, z: 400}
+    scaleMax: {x: 500, y: 500, z: 500}
+  propDensity: 0.108
+  references:
+    version: 2
+    RefIds:
+    - rid: 5434663493935300910
+      type: {class: AndCondition, ns: , asm: Assembly-CSharp}
+      data:
+        children:
+        - rid: 5434663493935300911
+        - rid: 5434663493935300912
+    - rid: 5434663493935300911
+      type: {class: HeightRangeCondition, ns: , asm: Assembly-CSharp}
+      data:
+        min: 24
+        max: 130
+    - rid: 5434663493935300912
+      type: {class: TemperatureRangeCondition, ns: , asm: Assembly-CSharp}
+      data:
+        min: 0.14
+        max: 0.34

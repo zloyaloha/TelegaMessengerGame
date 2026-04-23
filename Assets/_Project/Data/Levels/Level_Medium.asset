@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1723ee4a249b4aa3aa9bb0f409399e03, type: 3}
+  m_Name: Level_Medium
+  m_EditorClassIdentifier: Assembly-CSharp::LevelConfig
+  levelName: Medium
+  cargoCount: 6
+  possibleCargoTypes:
+  - {fileID: 11400000, guid: 7cbcd5398ab0a4cdc9bd78e528bcf71c, type: 2}
+  - {fileID: 11400000, guid: 75bfb77d469c9462b88412b6e7e0d5b2, type: 2}
+  - {fileID: 11400000, guid: 5976c7064a01849dc92393d4e32de68a, type: 2}
+  - {fileID: 11400000, guid: f583f5870ae43429daddffe4077d755e, type: 2}
+  deliveryDistance: 200
+  deliveryRadius: 5
+  threeStarMinCargo: 0.9
+  twoStarMinCargo: 0.7
+  threeStarMinHp: 0.8
+  twoStarMinHp: 0.5
+  cartHpWeight: 0.3

@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a6b79c2176ae42c2a20e231ab51d9c2, type: 3}
+  m_Name: WorldSettingsNew
+  m_EditorClassIdentifier: Assembly-CSharp::WorldSettings
+  chunkWidth: 64
+  chunkHeight: 64
+  worldSizeInChunks: 4
+  meshScale: 8
+  noiseScale: 146.5
+  octaves: 6
+  persistence: 0.443
+  lacunarity: 2.09
+  seed: 100
+  macroNoiseScale: 920
+  macroNoiseStrength: 0.875
+  riverStrength: 1
+  riverNoiseScale: 210
+  riverWarpScale: 103.2
+  riverWarpStrength: 0.493
+  riverThreshold: 0.751
+  riverDepth: 0.139
+  lakeStrength: 0
+  lakeNoiseScale: 260
+  lakeThreshold: 0.86
+  lakeDepth: 0.07
+  heightMultiplier: 2000
+  heightCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.08333333
+      outSlope: 0.08333333
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.20892304
+      value: 0.004562988
+      inSlope: 0.15134804
+      outSlope: 0.15134804
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.43677673
+      value: 0.04693848
+      inSlope: 0.38602942
+      outSlope: 0.38602942
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6150317
+      value: 0.16
+      inSlope: 0.8259804
+      outSlope: 0.8259804
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7
+      value: 0.38
+      inSlope: 1.7013887
+      outSlope: 1.7013887
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9013208
+      value: 0.7304394
+      inSlope: 2.3660715
+      outSlope: 2.3660715
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1.08
+      inSlope: 2.1428578
+      outSlope: 2.1428578
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  waterLevel: 20

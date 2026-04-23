@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ae78c5e8d074b728e5da1333edc71c, type: 3}
+  m_Name: BiomeDesert
+  m_EditorClassIdentifier: Assembly-CSharp::BiomeData
+  biomeName: "\u041F\u0443\u0441\u0442\u044B\u043D\u044F"
+  minimapColor: {r: 0.9, g: 0.73, b: 0.34, a: 1}
+  terrainTint: {r: 0.96, g: 0.82, b: 0.48, a: 1}
+  groundTexture: {fileID: 2800000, guid: c6ed0c6463040474c886353259dafc29, type: 3}
+  groundTextureWorldSize: 24
+  selectionPriority: 10
+  condition:
+    rid: 5434663493935300907
+  legacyMinHeight: 0
+  legacyMaxHeight: 1
+  legacyMinTemperature: 0
+  legacyMaxTemperature: 1
+  props:
+  - prefab: {fileID: 116276, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
+    weight: 0.55
+    spawnChance: 1
+    minDistance: 6
+    maxSlopeAngle: 28
+    scaleMin: {x: 0.8, y: 0.6, z: 0.8}
+    scaleMax: {x: 1.7, y: 1.1, z: 1.7}
+  - prefab: {fileID: 145164, guid: 8b8681c086a094348955216d4ef3cf0f, type: 3}
+    weight: 0.45
+    spawnChance: 1
+    minDistance: 8
+    maxSlopeAngle: 32
+    scaleMin: {x: 0.7, y: 0.7, z: 0.7}
+    scaleMax: {x: 1.8, y: 1.4, z: 1.8}
+  - prefab: {fileID: 110776, guid: 63ff2386a1262d64f99de6e3e1183874, type: 3}
+    weight: 0.45
+    spawnChance: 0.4
+    minDistance: 8
+    maxSlopeAngle: 66.6
+    scaleMin: {x: 0.1, y: 0.1, z: 0.1}
+    scaleMax: {x: 3, y: 3, z: 3}
+  - prefab: {fileID: 127060, guid: f149d460950e2ce478841483a0926f2a, type: 3}
+    weight: 0.45
+    spawnChance: 0.05
+    minDistance: 8
+    maxSlopeAngle: 32
+    scaleMin: {x: 0.7, y: 0.7, z: 0.7}
+    scaleMax: {x: 1.8, y: 1.4, z: 1.8}
+  - prefab: {fileID: 175704, guid: fb9f189dcf5d2ad4aad003a8a44b136d, type: 3}
+    weight: 0.45
+    spawnChance: 0.098
+    minDistance: 8
+    maxSlopeAngle: 32
+    scaleMin: {x: 0.7, y: 0.7, z: 0.7}
+    scaleMax: {x: 1.8, y: 1.4, z: 1.8}
+  - prefab: {fileID: 143784, guid: 5d8a4c5c2390fc54e96a652c3eeaf313, type: 3}
+    weight: 0.45
+    spawnChance: 0.25
+    minDistance: 8
+    maxSlopeAngle: 32
+    scaleMin: {x: 0.7, y: 0.7, z: 0.7}
+    scaleMax: {x: 5, y: 5, z: 5}
+  - prefab: {fileID: 163980, guid: 2fb6f5d47657319408dbd4f3e8412b4c, type: 3}
+    weight: 0.01
+    spawnChance: 0.25
+    minDistance: 8
+    maxSlopeAngle: 32
+    scaleMin: {x: 0.7, y: 0.7, z: 0.7}
+    scaleMax: {x: 5, y: 5, z: 5}
+  - prefab: {fileID: 145430, guid: 82f6882977329724ca4b934e09af87fc, type: 3}
+    weight: 0.05
+    spawnChance: 0.25
+    minDistance: 8
+    maxSlopeAngle: 32
+    scaleMin: {x: 0.7, y: 0.7, z: 0.7}
+    scaleMax: {x: 5, y: 5, z: 5}
+  propDensity: 0.01
+  references:
+    version: 2
+    RefIds:
+    - rid: 5434663493935300907
+      type: {class: AndCondition, ns: , asm: Assembly-CSharp}
+      data:
+        children:
+        - rid: 5434663493935300908
+        - rid: 5434663493935300909
+    - rid: 5434663493935300908
+      type: {class: HeightRangeCondition, ns: , asm: Assembly-CSharp}
+      data:
+        min: 0
+        max: 80
+    - rid: 5434663493935300909
+      type: {class: TemperatureRangeCondition, ns: , asm: Assembly-CSharp}
+      data:
+        min: 0.7
+        max: 1
